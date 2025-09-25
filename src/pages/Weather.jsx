@@ -24,9 +24,9 @@ const Weather = () => {
     fetchWeather("Mumbai");
   }, []);
 
-  // if (!weatherData) {
-  //   return <p className="text-center mt-10 text-gray-500">Loading...</p>;
-  // }
+  if (!weatherData) {
+    return <p className="text-center mt-10 text-gray-500">Loading...</p>;
+  }
 
   const { data } = weatherData;
   const { temp, rh, wind_spd } = data[0];
