@@ -25,14 +25,14 @@ const Weather = () => {
   }, []);
 
   if (!weatherData) {
-    return <p className="text-center mt-10 text-gray-500">Loading...</p>;
+    return <p className="text-center mt-20 text-gray-500">Loading...</p>;
   }
 
   const { data } = weatherData;
   const { temp, rh, wind_spd } = data[0];
 
   return (
-    <div className="mt-16 flex justify-center items-center">
+    <div className="mt-20 flex justify-center items-center">
       <div className="bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 text-white rounded-2xl shadow-xl p-8 w-[400px]">
         {/* Logo */}
         <img

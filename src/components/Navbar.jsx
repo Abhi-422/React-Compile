@@ -8,8 +8,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white/90 backdrop-blur-md p-4 fixed top-0 left-0 right-0 shadow-lg z-50">
-      <ul className="flex justify-center gap-8 flex-wrap font-medium">
-        <li>
+      <ul className="flex justify-center gap-8 font-medium">
+        <li> 
           <NavLink to="/" className={linkClass}>
             Currency Converter
           </NavLink>
@@ -18,7 +18,7 @@ const Navbar = () => {
           <NavLink to="/m" className={linkClass}>
             Search Movies
           </NavLink>
-        </li>
+        </li> 
         <li>
           <NavLink to="/p" className={linkClass}>
             Password Generator
